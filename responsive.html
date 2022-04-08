@@ -4,73 +4,173 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
     <script type="text/js" src="js/bootstrap.bundle.min.js"></script>
     <title>Documento</title>
   </head>
   <body>
-    <div class="container border px-5 py-5">
+    <div class="container py-3"></div>
+    <div class="container border px-4 py-4 was-validated">
       <div class="card">
-        <div class="card-header">
-            Formulario para crear una cuenta
-        </div>
-        <div class="card-body ">
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <lavel >Nombres:</lavel>
-                    <input type="text" name="" class="form-control">
-                </div>
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <label>Apellidos:</label>
-                    <input type="text" name="" class="form-control">
-                </div>
-                
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <label>Dirección:</label>
-                    <input type="text" name="" class="form-control">
-                </div>
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <lavel>Telefono:</lavel>
-                    <input type="text" name="" class="form-control">
-                </div>
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <label>Correo:</label>
-                    <input type="email" name="" class="form-control" id="exampleFormControlInput1"  placeholder="nombre@ejemplo.com">
-                </div>
-
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <label for="inputPassword">Password</label>
-                    <input type="password" class="form-control" id="inputPassword">
-                </div>
-
-                <!-- select -->
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <label for="inputPassword">Genero</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>¿Cual es su genero?</option>
-                        <option value="1">Masculino</option>
-                        <option value="2">Femenino</option>
-                        <option value="3">Binario</option>
-                      </select>
-                </div>
-                <!-- /select -->
-                
+        <div class="card-header text-center">Formulario de registro responsive</div>
+      </div>
+      <div class="card-body">
+        <div class="row justify-content-center">
+          <!-- Nombre -->
+          <div class="col-md-6 col-lg-4 mb-3">
+            <lavel>Nombres:</lavel>
+            <input type="text" name="" class="form-control" required />
+            <div class="valid-feedback">Correcto</div>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Completa este campo
             </div>
-        
+          </div>
+          <!-- /Nombres -->
 
-            <div class="text-center">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 text-sm-center text-md-end">
-                        <button class="btn btn-secondary">Limpiar Formulario</button>
-                    </div>
-                    <div class="col-sm-12 col-md-6 text-sm-center text-md-start">
-                        <button class="btn btn-success">Registrar Persona</button>
-                    </div>
-                </div>
+          <!-- Apellidos -->
+          <div class="col-md-6 col-lg-4 mb-3">
+            <label>Apellidos:</label>
+            <input type="text" name="" class="form-control" required />
+            <div class="valid-feedback">Correcto</div>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Completa este campo
             </div>
+          </div>
+          <!-- /Apellidos -->
 
+          <!-- Genero -->
+          <div class="col-md-6 col-lg-4 mb-3">
+            <label for="inputPassword">Género</label>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              required
+            >
+              <option value="">--Seleccione--</option>
+              <option value="1">Masculino</option>
+              <option value="2">Femenino</option>
+              <option value="3">Binario</option>
+            </select>
+            <div class="valid-feedback">Correcto</div>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Selecciona un campo
+            </div>
+          </div>
+          <!-- /Genero -->
+
+          <!-- Direccion -->
+          <div class="col-md-6 col-lg-4 mb-3">
+            <label>Dirección:</label>
+            <input type="text" name="" class="form-control" required />
+            <div class="valid-feedback">Correcto</div>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Completa este campo
+            </div>
+          </div>
+          <!-- /Direccion -->
+
+          <!-- Telefono -->
+          <div class="col-md-6 col-lg-4 mb-3">
+            <lavel>Telefono:</lavel>
+            <input type="number" name="" class="form-control" required />
+            <div class="valid-feedback">Correcto</div>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Completa este campo
+            </div>
+          </div>
+          <!-- /Teléfono -->
+
+          <!-- Correo -->
+          <div class="col-md-6 col-lg-4 mb-3">
+            <label>Correo:</label>
+            <input
+              type="email"
+              name=""
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="nombre@ejemplo.com"
+              required
+            />
+            <div class="valid-feedback">Correcto</div>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Completa este campo
+            </div>
+          </div>
+          <!-- /Correo -->
+
+          <!-- user -->
+          <div class="col-md-6 col-lg-4 mb-3">
+            <label>Usuario:</label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefaultUsername"
+                required
+              />
+              <div class="valid-feedback">Correcto</div>
+              <div
+                id="validationServerUsernameFeedback"
+                class="invalid-feedback"
+              >
+                Completa este campo
+              </div>
+            </div>
+          </div>
+          <!-- /user -->
+
+          <!-- Password -->
+          <div class="col-md-6 col-lg-4 mb-3">
+            <label for="inputPassword">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword"
+              required
+            />
+            <div class="valid-feedback">Correcto</div>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Completa este campo
+            </div>
+          </div>
+          <!-- /Password -->
+
+          <!-- Terminos -->
+          <div class="col-md-6 col-lg-4 mb-3 align-self-center">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck2"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck2">
+                Estoy de acuerdo con los Terminos y Condiciones
+              </label>
+            </div>
+          </div>
+          <!-- /Terminos -->
         </div>
+
+        <!-- submit -->
+        <div class="text-center mt-4">
+          <div class="row">
+            <div
+              class="col-sm-12 col-md-12 col-lg-12 text-sm-center text-md-center text-lg-center"
+            >
+              <input
+                type="submit"
+                value="Registrar persona"
+                class="btn btn-success"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- /submit -->
+      </div>
     </div>
   </body>
 </html>
