@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
     <script type="text/js" src="js/bootstrap.bundle.min.js"></script>
-    <title>Documento</title>
+    <title>Formulario</title>
   </head>
   <body>
     <div class="container py-3"></div>
-    <div class="container border px-4 py-4 was-validated">
+    <div class="container border px-4 py-4 was-validated bg-darkgit" id="ped">
       <div class="card">
-        <div class="card-header text-center">Formulario de registro responsive</div>
+        <div class="card-header text-center text-dark fs-4 font-monospace bg-light">Formulario de registro responsive</div>
       </div>
       <div class="card-body">
         <div class="row justify-content-center">
           <!-- Nombre -->
           <div class="col-md-6 col-lg-4 mb-3">
-            <lavel>Nombres:</lavel>
-            <input type="text" name="" class="form-control" required />
+            <lavel class="text-light">Nombres:</lavel>
+            <input type="text" name="" class="form-control bg-light" required />
             <div class="valid-feedback">Correcto</div>
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
               Completa este campo
@@ -30,7 +30,7 @@
 
           <!-- Apellidos -->
           <div class="col-md-6 col-lg-4 mb-3">
-            <label>Apellidos:</label>
+            <label class="text-light">Apellidos:</label>
             <input type="text" name="" class="form-control" required />
             <div class="valid-feedback">Correcto</div>
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
@@ -41,7 +41,7 @@
 
           <!-- Genero -->
           <div class="col-md-6 col-lg-4 mb-3">
-            <label for="inputPassword">Género</label>
+            <label class="text-light" for="inputPassword">Género</label>
             <select
               class="form-select"
               aria-label="Default select example"
@@ -50,7 +50,7 @@
               <option value="">--Seleccione--</option>
               <option value="1">Masculino</option>
               <option value="2">Femenino</option>
-              <option value="3">Binario</option>
+              <option value="3">No Binario</option>
             </select>
             <div class="valid-feedback">Correcto</div>
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
@@ -61,7 +61,7 @@
 
           <!-- Direccion -->
           <div class="col-md-6 col-lg-4 mb-3">
-            <label>Dirección:</label>
+            <label class="text-light">Dirección:</label>
             <input type="text" name="" class="form-control" required />
             <div class="valid-feedback">Correcto</div>
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
@@ -72,7 +72,7 @@
 
           <!-- Telefono -->
           <div class="col-md-6 col-lg-4 mb-3">
-            <lavel>Telefono:</lavel>
+            <lavel class="text-light">Teléfono:</lavel>
             <input type="number" name="" class="form-control" required />
             <div class="valid-feedback">Correcto</div>
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
@@ -83,7 +83,7 @@
 
           <!-- Correo -->
           <div class="col-md-6 col-lg-4 mb-3">
-            <label>Correo:</label>
+            <label class="text-light">Correo:</label>
             <input
               type="email"
               name=""
@@ -101,7 +101,7 @@
 
           <!-- user -->
           <div class="col-md-6 col-lg-4 mb-3">
-            <label>Usuario:</label>
+            <label class="text-light">Usuario:</label>
             <div class="input-group">
               <span class="input-group-text" id="inputGroupPrepend2">@</span>
               <input
@@ -123,7 +123,7 @@
 
           <!-- Password -->
           <div class="col-md-6 col-lg-4 mb-3">
-            <label for="inputPassword">Password</label>
+            <label class="text-light" for="inputPassword">Contraseña</label>
             <input
               type="password"
               class="form-control"
