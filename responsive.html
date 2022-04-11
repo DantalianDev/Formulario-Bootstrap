@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <script type="text/js" src="js/bootstrap.bundle.min.js"></script>
     <title>Formulario</title>
   </head>
   <body>
     <div class="container py-3"></div>
-    <div class="container border px-4 py-4 was-validated bg-dark" id="ped">
-      <div class="card">
-        <div class="card-header text-center text-dark fs-4 font-monospace bg-light">Formulario de registro responsive</div>
+    <div class="container border px-4 py-4 was-validated bg-black" id="ped">
+      <div class="card me-4 ms-4 mb-2">
+        <div class="card-header text-center text-black fs-4 font-monospace bg-light"><i class="ph-notebook-light text-success"></i> Formulario de registro responsive</div>
       </div>
       <div class="card-body">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center font-monospace">
           <!-- Nombre -->
           <div class="col-md-6 col-lg-4 mb-3">
-            <lavel class="text-light">Nombres:</lavel>
+            <lavel class="text-light">¿Cuál es tu nombre?</lavel>
             <input type="text" name="" class="form-control bg-light" required />
             <div class="valid-feedback">Correcto</div>
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
@@ -29,8 +30,8 @@
           <!-- /Nombres -->
 
           <!-- Apellidos -->
-          <div class="col-md-6 col-lg-4 mb-3">
-            <label class="text-light">Apellidos:</label>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <label class="text-light">¿Cuál es tu apellido?</label>
             <input type="text" name="" class="form-control" required />
             <div class="valid-feedback">Correcto</div>
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
@@ -40,8 +41,8 @@
           <!-- /Apellidos -->
 
           <!-- Genero -->
-          <div class="col-md-6 col-lg-4 mb-3">
-            <label class="text-light" for="inputPassword">Género</label>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <label class="text-light" for="inputPassword">¿Cuál es tu sexo?</label>
             <select
               class="form-select"
               aria-label="Default select example"
@@ -50,7 +51,7 @@
               <option value="">--Seleccione--</option>
               <option value="1">Masculino</option>
               <option value="2">Femenino</option>
-              <option value="3">No Binario</option>
+              <option value="3">No binario</option>
             </select>
             <div class="valid-feedback">Correcto</div>
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
@@ -60,8 +61,8 @@
           <!-- /Genero -->
 
           <!-- Direccion -->
-          <div class="col-md-6 col-lg-4 mb-3">
-            <label class="text-light">Dirección:</label>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <label class="text-light">¿Cuál es tu dirección?</label>
             <input type="text" name="" class="form-control" required />
             <div class="valid-feedback">Correcto</div>
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
@@ -71,8 +72,8 @@
           <!-- /Direccion -->
 
           <!-- Telefono -->
-          <div class="col-md-6 col-lg-4 mb-3">
-            <lavel class="text-light">Teléfono:</lavel>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <lavel class="text-light">¿Cuál es tu teléfono?</lavel>
             <input type="number" name="" class="form-control" required />
             <div class="valid-feedback">Correcto</div>
             <div id="validationServerUsernameFeedback" class="invalid-feedback">
@@ -82,8 +83,8 @@
           <!-- /Teléfono -->
 
           <!-- Correo -->
-          <div class="col-md-6 col-lg-4 mb-3">
-            <label class="text-light">Correo:</label>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <label class="text-light">¿Cuál es tu correo electrónico?</label>
             <input
               type="email"
               name=""
@@ -100,8 +101,8 @@
           <!-- /Correo -->
 
           <!-- user -->
-          <div class="col-md-6 col-lg-4 mb-3">
-            <label class="text-light">Usuario:</label>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <label class="text-light">¿Cómo quieres que te llamemos?</label>
             <div class="input-group">
               <span class="input-group-text" id="inputGroupPrepend2">@</span>
               <input
@@ -122,8 +123,8 @@
           <!-- /user -->
 
           <!-- Password -->
-          <div class="col-md-6 col-lg-4 mb-3">
-            <label class="text-light" for="inputPassword">Contraseña</label>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <label class="text-light" for="inputPassword">Crea una contraseña</label>
             <input
               type="password"
               class="form-control"
@@ -138,7 +139,7 @@
           <!-- /Password -->
 
           <!-- Terminos -->
-          <div class="col-md-6 col-lg-4 mb-3 align-self-center">
+          <div class="col-md-6 col-lg-4 mb-4 align-self-center">
             <div class="form-check">
               <input
                 class="form-check-input"
@@ -147,8 +148,8 @@
                 id="invalidCheck2"
                 required
               />
-              <label class="form-check-label" for="invalidCheck2">
-                Estoy de acuerdo con los Terminos y Condiciones
+              <label class="form-check-label text-light" for="invalidCheck2">
+                Certifico que soy mayor de 18 años y estoy de acuerdo con los <span class="text-success text-decoration-underline">Terminos y Condiciones</span>
               </label>
             </div>
           </div>
@@ -163,8 +164,8 @@
             >
               <input
                 type="submit"
-                value="Registrar persona"
-                class="btn btn-success"
+                value="Registrarte"
+                class="btn btn-success font-monospace"
               />
             </div>
           </div>
