@@ -1,177 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-    <script src="https://unpkg.com/phosphor-icons"></script>
-    <script type="text/js" src="js/bootstrap.bundle.min.js"></script>
-    <title>Formulario</title>
-  </head>
-  <body>
-    <div class="container py-3"></div>
-    <div class="container border px-4 py-4 was-validated bg-black" id="ped">
-      <div class="card me-4 ms-4 mb-2">
-        <div class="card-header text-center text-black fs-4 font-monospace bg-light"><i class="ph-notebook-light text-success"></i> Formulario de registro responsive</div>
-      </div>
-      <div class="card-body">
-        <div class="row justify-content-center font-monospace">
-          <!-- Nombre -->
-          <div class="col-md-6 col-lg-4 mb-3">
-            <lavel class="text-light">¿Cuál es tu nombre?</lavel>
-            <input type="text" name="" class="form-control bg-light" required />
-            <div class="valid-feedback">Correcto</div>
-            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-              Completa este campo
-            </div>
-          </div>
-          <!-- /Nombres -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-          <!-- Apellidos -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <label class="text-light">¿Cuál es tu apellido?</label>
-            <input type="text" name="" class="form-control" required />
-            <div class="valid-feedback">Correcto</div>
-            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-              Completa este campo
-            </div>
-          </div>
-          <!-- /Apellidos -->
+    <style>
+        body{
+            background: #000;
+            background: linear-gradient(to left, #1a3c7d, #000221);
+        }
+        .bg{
+            background-image: url(img/Cartas2.jpg);
+            background-position: center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
 
-          <!-- Genero -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <label class="text-light" for="inputPassword">¿Cuál es tu sexo?</label>
-            <select
-              class="form-select"
-              aria-label="Default select example"
-              required
-            >
-              <option value="">--Seleccione--</option>
-              <option value="1">Masculino</option>
-              <option value="2">Femenino</option>
-              <option value="3">No binario</option>
-            </select>
-            <div class="valid-feedback">Correcto</div>
-            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-              Selecciona un campo
+    <div class="container w-75 bg-black mt-5 mb-5 rounded shadow">
+        <div class="row align-items-lg-stretch">
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+                      
             </div>
-          </div>
-          <!-- /Genero -->
+            <div class="col text-light p-5 rounded-end">
+                <div class="text-end"><a href="index.html">
+                    <img src="/img/LogoPoker.png" width="48" alt=""></a>
+                </div>
 
-          <!-- Direccion -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <label class="text-light">¿Cuál es tu dirección?</label>
-            <input type="text" name="" class="form-control" required />
-            <div class="valid-feedback">Correcto</div>
-            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-              Completa este campo
-            </div>
-          </div>
-          <!-- /Direccion -->
+                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
 
-          <!-- Telefono -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <lavel class="text-light">¿Cuál es tu teléfono?</lavel>
-            <input type="number" name="" class="form-control" required />
-            <div class="valid-feedback">Correcto</div>
-            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-              Completa este campo
-            </div>
-          </div>
-          <!-- /Teléfono -->
+                <!-- LOGIN -->
 
-          <!-- Correo -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <label class="text-light">¿Cuál es tu correo electrónico?</label>
-            <input
-              type="email"
-              name=""
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="nombre@ejemplo.com"
-              required
-            />
-            <div class="valid-feedback">Correcto</div>
-            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-              Completa este campo
-            </div>
-          </div>
-          <!-- /Correo -->
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="email">
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-check-input" id="">
+                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    </div>
 
-          <!-- user -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <label class="text-light">¿Cómo quieres que te llamemos?</label>
-            <div class="input-group">
-              <span class="input-group-text" id="inputGroupPrepend2">@</span>
-              <input
-                type="text"
-                class="form-control"
-                id="validationDefaultUsername"
-                required
-              />
-              <div class="valid-feedback">Correcto</div>
-              <div
-                id="validationServerUsernameFeedback"
-                class="invalid-feedback"
-              >
-                Completa este campo
-              </div>
-            </div>
-          </div>
-          <!-- /user -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Iniciar Sesíon</button>
+                    </div>
 
-          <!-- Password -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <label class="text-light" for="inputPassword">Crea una contraseña</label>
-            <input
-              type="password"
-              class="form-control"
-              id="inputPassword"
-              required
-            />
-            <div class="valid-feedback">Correcto</div>
-            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-              Completa este campo
-            </div>
-          </div>
-          <!-- /Password -->
+                    <div class="my-3">
+                        <span>No tienes cuenta? <a href="formulario.html" class="text-decoration-none">Registrate</a></span><br>
+                        <span><a href="#" class="text-decoration-none">Recuperar Password</a></span>
+                    </div>
+                </form>
 
-          <!-- Terminos -->
-          <div class="col-md-6 col-lg-4 mb-4 align-self-center">
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="invalidCheck2"
-                required
-              />
-              <label class="form-check-label text-light" for="invalidCheck2">
-                Certifico que soy mayor de 18 años y estoy de acuerdo con los <span class="text-success text-decoration-underline">Terminos y Condiciones</span>
-              </label>
+                <!-- LOGIN CON REDES SOCIALES -->
+                
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar Sessíon</div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="img/LogoPoker.png" width="32" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-10 text-center">
+                                        <span>Facebook</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="img/LogoPoker.png" width="32" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-10 text-center">
+                                        <span>Google</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- /Terminos -->
         </div>
-
-        <!-- submit -->
-        <div class="text-center mt-4">
-          <div class="row">
-            <div
-              class="col-sm-12 col-md-12 col-lg-12 text-sm-center text-md-center text-lg-center"
-            >
-              <input
-                type="submit"
-                value="Registrarte"
-                class="btn btn-success font-monospace"
-              />
-            </div>
-          </div>
-        </div>
-        <!-- /submit -->
-      </div>
     </div>
-  </body>
+    
+    <scrip src="js/bootstrap.bundle.min.js"></scrip>
+</body>
 </html>
